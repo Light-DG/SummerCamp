@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/text_bg">
+
+    <TextView
+        android:id="@+id/accuracy_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提高识别率"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:padding="5dp"
+        android:textColor="#212121"/>
+
+    <TextView
+        android:id="@+id/image_skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图像识别："
+        android:layout_below="@id/accuracy_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:id="@+id/first_skill_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="让所查找的物体在图片中的占比尽量大"
+        android:layout_below="@id/image_skill"
+        android:layout_alignLeft="@id/image_skill"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:id="@+id/sample_picture"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_skill_title"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="100dp"
+            android:src="@drawable/sample1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:src="@drawable/right_arrow"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="100dp"
+            android:src="@drawable/sample2"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/voice_skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="语音识别："
+        android:layout_below="@id/sample_picture"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:id="@+id/second_skill_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录音时，不要用嘴对着手机的麦克风"
+        android:layout_below="@id/voice_skill"
+        android:layout_alignLeft="@id/voice_skill"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"/>
+
+
+</RelativeLayout>

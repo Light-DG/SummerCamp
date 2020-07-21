@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/show_bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/show_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:id="@+id/icon_voice"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/shengyin"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/show_toolbar"/>
+
+    <TextView
+        android:id="@+id/text_garbage_name"
+        android:layout_below="@id/icon_voice"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="垃圾名称：富士苹果"
+        android:textSize="30dp"
+        android:layout_alignLeft="@id/icon_voice"
+        android:textColor="#212121"/>
+
+    <TextView
+        android:id="@+id/text_garbage_kind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="类型： 有害垃圾"
+        android:textSize="35dp"
+        android:layout_below="@id/text_garbage_name"
+        android:textColor="#212121"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/text_garbage_name"/>
+
+    <TextView
+        android:id="@+id/text_garbage_ps"
+        android:background="@drawable/shape_rec_blue"
+        android:padding="10dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="小贴士： 湿垃圾应从生产时就与其他品种垃圾分开收集。投放前尽量沥干水分，有外包装的应去除外包装投放"
+        android:layout_below="@id/text_garbage_kind"
+        android:textSize="20dp"
+        android:textColor="#212121"
+        android:layout_alignLeft="@id/text_garbage_kind"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/text_confidence"
+        android:layout_below="@id/text_garbage_ps"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/text_garbage_ps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可信度："
+        android:textSize="15dp"
+        android:textColor="#2196F3"/>
+
+    <TextView
+        android:id="@+id/text_tip"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/text_garbage_ps"
+        android:layout_alignLeft="@id/text_garbage_ps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温馨提示： 查询结果不一定正确"
+        android:textSize="15dp"
+        android:textColor="#2196F3"/>
+
+    <ImageView
+        android:id="@+id/image_garbage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/text_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/share_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/image_garbage"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/weixin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:src="@mipmap/weixin"/>
+
+        <ImageView
+            android:id="@+id/pengyouquan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:src="@mipmap/pengyouquan"/>
+
+        <ImageView
+            android:id="@+id/qq"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:src="@mipmap/qq"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg7">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="垃圾分类的意义"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:id="@+id/title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="50dp"
+            android:text="1、减少环境污染"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:id="@+id/content_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="目前我国的垃圾处理一般都是采用卫生填埋甚至简易填埋的方式，这样占用了很多的土地，并且对环境造成了严重污染。所以垃圾分类可以把有用的垃圾回收再利用，并且减少垃圾的填埋，这样就减少了对环境的危害。"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:layout_below="@id/title_1"
+            android:layout_marginTop="20dp"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:id="@+id/title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_1"
+            android:layout_marginTop="30dp"
+            android:text="2、提高大众节约意识"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:id="@+id/content_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="垃圾分类让人们学会节约资源、利用资源，并且养成一个良好的生活习惯，提高个人的素质。如果人们能够养成良好的垃圾分类习惯，他们就会更多的关注环境保护问题，才能真正知道资源的珍贵，养成节约资源的习惯。"
+            android:textSize="20dp"
+            android:layout_below="@id/title_2"
+            android:layout_marginTop="20dp"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:id="@+id/title_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_2"
+            android:layout_marginTop="30dp"
+            android:text="3、节省土地资源"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:id="@+id/content_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="生活垃圾中有些物质是不容易被降解的，对土地进行了严重侵蚀。将垃圾分类之后，就可以回收一部分再利用，会减少垃圾的数量，从而会会节省更多的土地资源"
+            android:textSize="20dp"
+            android:layout_below="@id/title_3"
+            android:layout_marginTop="20dp"
+            android:textColor="#212121"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
+
+

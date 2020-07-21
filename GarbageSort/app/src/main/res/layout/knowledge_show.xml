@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="垃圾主要分为可回收物、厨余垃圾，有害垃圾和其他垃圾四类。"
+            android:textSize="20dp"
+            android:textColor="#8DEEEE"/>
+
+        <LinearLayout
+            android:id="@+id/kehuishouwu_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Title"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/kehuishouwu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="一，可回收物"
+                android:textSize="20dp"
+                android:layout_alignLeft="@id/Title"/>
+
+            <ImageView
+                android:id="@+id/image_kehuishouwu"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/kehuishouwu"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_kehuishouwu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="包括废纸、塑料、玻璃、金属和布料五大类，需要注意的是纸巾和厕所纸由于水溶性太强不可回收。"
+            android:textSize="20dp"
+            android:layout_alignLeft="@id/kehuishouwu_bar"
+            android:layout_below="@id/kehuishouwu_bar"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/chuyulaji_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_kehuishouwu"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/chuyulaji_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="二，厨余垃圾"
+                android:textSize="20dp"
+                android:layout_alignLeft="@id/Title"/>
+
+            <ImageView
+                android:id="@+id/image_chuyulaji"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/chuyulaji"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_chuyulaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="在上海又称为湿垃圾，包括剩菜剩饭、骨头、菜根菜叶、果皮等食品类废物。厨余垃圾应当提供给专业化处理单位进行处理，严禁将废弃食用油脂（包括地沟油）加工后作为食用油使用，严禁直接使用厨余垃圾饲养畜禽及鱼类，严禁用未经无害化处理的厨余垃圾生产肥料。"
+            android:textSize="20dp"
+            android:layout_alignLeft="@id/kehuishouwu_bar"
+            android:layout_below="@id/chuyulaji_bar"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/youhailaji_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_chuyulaji"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/youhailaji_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="二 , 有害垃圾"
+                android:textSize="20dp"
+                android:layout_alignLeft="@id/Title"/>
+
+            <ImageView
+                android:id="@+id/image_youhailaji"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/youhailaji"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_youhailaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="指的是含有对人体健康有害额重金属，有毒的物质或者对环境造成危害的废弃物。  电池类：如纽扣电池、充电电池（如手机电池），普通干电池。  含汞类：废荧光灯管、废节能灯、废水银温度计、废水银血压计、荧光棒。  油漆类：废油漆、废农药、杀虫剂等，残余液体需和容器一起作为有害垃圾投放。"
+            android:textSize="20dp"
+            android:layout_alignLeft="@id/kehuishouwu_bar"
+            android:layout_below="@id/youhailaji_bar"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/qitalaji_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_youhailaji"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/qitalaji_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="二 , 其他垃圾"
+                android:textSize="20dp"
+                android:layout_alignLeft="@id/Title"/>
+
+            <ImageView
+                android:id="@+id/image_qitalaji"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/qitalaji"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_qitalaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="包括砖瓦陶瓷、渣土、卫生间废纸、瓷器碎片等难以属回收的废弃物。"
+            android:textSize="20dp"
+            android:layout_alignLeft="@id/kehuishouwu_bar"
+            android:layout_below="@id/qitalaji_bar"
+            android:layout_marginTop="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/text_qitalaji"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
